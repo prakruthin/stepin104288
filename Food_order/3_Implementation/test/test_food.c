@@ -13,7 +13,11 @@ void test_add(void)
   TEST_ASSERT_EQUAL(320, add(300,20));
 }
 
-
+void test_add_zero(void)
+{
+  TEST_ASSERT_EQUAL(20, add(0,20));
+  TEST_ASSERT_EQUAL(30, add(0,30));
+}
 
 
 
@@ -23,12 +27,8 @@ int test_main(void)
 /* Initiate the Unity Test Framework */
   UNITY_BEGIN();
 
-/* Run Test functions
-  RUN_TEST(test_factorial);
-  RUN_TEST(test_zero_one);
-  RUN_TEST(test_negative);
-*/
-RUN_TEST(test_add);
+  RUN_TEST(test_add);
+  RUN_TEST(test_add_zero);
 
   /* Close the Unity Test Framework */
   return UNITY_END();
