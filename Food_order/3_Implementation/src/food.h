@@ -37,13 +37,7 @@ void viewmenu1(void);
 void deletefood(void);
 void placeorder(void);
 
-int add(int a,int b);
-
-
-int add(int a, int b)
-{
-	return a+b;
-}
+int add(int,int);
 
 #endif 
 
