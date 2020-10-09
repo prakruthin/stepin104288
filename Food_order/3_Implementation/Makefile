@@ -17,5 +17,5 @@ run:$(PROJECT_NAME)
 doc:
 	make -C documentation
 
-#clean:
-#	rm -rf $(PROJECT_NAME) documentation/html
+clean:
+	rm -rf $(PROJECT_NAME) documentation/html
