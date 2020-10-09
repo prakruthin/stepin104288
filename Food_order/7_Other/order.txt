@@ -1,0 +1,51 @@
+
+momos
+ quantity : 2
+
+rolls
+ quantity : 3
+
+rolls
+ quantity : 2
+
+Grand Total : 320
+Order Placed By : suhas kakulam
+Phone number : 8953695782
+
+
+
+noodles
+ quantity : 2
+
+Grand Total : 410
+Order Placed By : rahul kundhra
+Phone number : 8796826958
+
+
+
+roti
+ quantity : 10
+
+Grand Total : 150
+Order Placed By : sahana gandhi
+Phone number : 7859682695
+
+
+
+bevarages
+ quantity : 5
+
+Grand Total : 75
+Order Placed By : meghana srinivas
+Phone number : 8969892693
+
+
+
+salad
+ quantity : 2
+
+Grand Total : 40
+Order Placed By : bhuvan bam
+Phone number : 8693694859
+
+

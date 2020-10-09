@@ -1,0 +1,46 @@
+REQUIREMENTS
+•	Functional requirements
+	1.	Admin login
+		The admin section should have a login facility through which only authorised person can view and edit the system. 
+	2.	Add new records
+		Admin should have the ability to add new records. Admin should add various information such as employee id, employee name, date of birth, year of joining, place and department.
+	3.	Add and delete food items in menu
+		Admin should be able to add a new food item to menu and delete a food item from menu using its Id.
+	4.	Search, delete and view record
+		Admin should be able to search through the records using either name or employee id. Deletion of records can also be done using employee id. View of complete records should be provided to the admin.
+	5.	View previous placed orders
+		The admin should be able to view all the previously placed orders for further usage.
+	6.	Display the menu
+		In the system all items are displayed with their rates.
+	7.	Modify menu
+		Admin can make changes in the menu like adding or removing food items which are not available.
+	8.	Select food items
+		Items are selected by customers which they prefer..
+	9.	Display order amount
+		After selecting items and their quantity, the total bill amount should be displayed. 
+	10.	Provide delivery details
+		Customer should be asked to enter delivery details. On successful entry of delivery details, order is placed.
+ 
+•	Non-Functional requirements
+	1.	Portability:
+		System running on one platform can be easily converted to run on another platform
+	2.	Reliability
+		The ability of the system to behave consistently in a ser-acceptable manner when operating within the environment for which the system was intended.
+	3.	Availability
+		The system should be available at all times, meaning the user can access it all the time, only restricted by the down time of the server on which the system runs. 
+	4.	Security
+		Secure access of confidential data (customer information)
+	5.	User friendly
+		System should be easily used by the customers.
+	6.	Performance
+		Performance should be fast.
+	7.	Privacy
+		Personal data of the system should not disclose to anyone.
+•	Software requirements
+		Code::Blocks v17.12
+		GNU C compiler 
+•	Operating system
+		Windows OS (prefered)
+		Ubuntu 
+•	Language
+		C language
