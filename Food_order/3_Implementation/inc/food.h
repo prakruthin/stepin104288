@@ -37,6 +37,6 @@ void viewmenu1(void);
 void deletefood(void);
 void placeorder(void);
 
-
+int add(int,int);
 #endif 
 
