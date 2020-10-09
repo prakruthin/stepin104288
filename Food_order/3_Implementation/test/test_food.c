@@ -20,7 +20,11 @@ void test_add_zero(void)
 }
 
 
-
+void test_neg(void)
+{
+	TEST_ASSERT_EQUAL(30, add(70,-40));
+  TEST_ASSERT_EQUAL(320, add(-100,420));
+}
 
 int test_main(void)
 {
@@ -29,6 +33,7 @@ int test_main(void)
 
   RUN_TEST(test_add);
   RUN_TEST(test_add_zero);
+  RUN_TEST(test_neg);
 
   /* Close the Unity Test Framework */
   return UNITY_END();
