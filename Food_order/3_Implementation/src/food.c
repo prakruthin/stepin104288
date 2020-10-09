@@ -36,13 +36,13 @@ int quantity;
 double total=0;
 int t;
 char password[20]="123321";
-
+/*
 int main()
 {
 	mainmenu();
 	return 0;
 }
-
+*/
 int add(int a, int b)
 {
 	return a+b;
