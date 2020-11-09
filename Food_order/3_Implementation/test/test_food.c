@@ -22,8 +22,25 @@ void test_add_zero(void)
 
 void test_add_neg(void)
 {
-	TEST_ASSERT_EQUAL(30, add(70,-40));
+  TEST_ASSERT_EQUAL(30, add(70,-40));
   TEST_ASSERT_EQUAL(320, add(-100,420));
+}
+
+void test_checkid(void)
+{
+	TEST_ASSERT_EQUAL(1, checkid(0));
+	TEST_ASSERT_EQUAL(1, checkid(201));
+	TEST_ASSERT_EQUAL(1, checkid(202));
+	TEST_ASSERT_EQUAL(1, checkid(203));
+}
+
+
+void test_checkmenuid(void)
+{
+	TEST_ASSERT_EQUAL(1, checkmenuid(0));
+        TEST_ASSERT_EQUAL(1, checkmenuid(20));
+	TEST_ASSERT_EQUAL(1, checkmenuid(32));
+	TEST_ASSERT_EQUAL(1, checkmenuid(99));
 }
 
 int test_main(void)
@@ -34,6 +51,8 @@ int test_main(void)
   RUN_TEST(test_add);
   RUN_TEST(test_add_zero);
   RUN_TEST(test_add_neg);
+	RUN_TEST(test_checkid);
+    RUN_TEST(test_checkmenuid);
 
   /* Close the Unity Test Framework */
   return UNITY_END();
