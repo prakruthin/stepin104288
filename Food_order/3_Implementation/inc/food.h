@@ -12,6 +12,8 @@ void returnfunc1(void);
 
 void mainmenu(void);
 
+int checkid(int);
+
 void administration(void);
 void customer(void);
 
