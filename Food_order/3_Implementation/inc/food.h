@@ -3,8 +3,8 @@
 #define __FOOD_H__
 
 #include<stdio.h>
-//#include<conio.h>
-#include<curses.h>
+#include<iostream.h>
+//#include<curses.h>
 #include<string.h>
 #include<stdlib.h>
 
