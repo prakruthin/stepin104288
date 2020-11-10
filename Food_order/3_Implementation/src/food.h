@@ -3,7 +3,7 @@
 #define __FOOD_H__
 
 #include<stdio.h>
-#include<conio.h>
+//#include<conio.h>
 #include<string.h>
 #include<stdlib.h>
 
