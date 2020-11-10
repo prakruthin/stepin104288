@@ -14,5 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: make -C Food_order/3_Implementation/make
+      run: make -C Food_order/3_Implementation/
     
