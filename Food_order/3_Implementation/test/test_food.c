@@ -1,3 +1,7 @@
+  
+#include <CUnit/Basic.h>
+#include <CUnit/CUnit.h>
+
 #include "unity.h"
 #include "unity_internals.h"
 #include "food.h"
