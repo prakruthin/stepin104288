@@ -16,5 +16,5 @@ jobs:
     - name: Install make
       run: sudo apt-get install ubuntu-make
     - name: make all
-      run:  make all -C Food_order/3_Implementation/make 
+      run:  make all -C Food_order/3_Implementation/
  
