@@ -20,4 +20,4 @@ jobs:
     - name: make test
       run: |
         make test -C Food_order/3_Implementation/
-        valgrind ./Food_order/3_Implementation/test/test_food.c
+        valgrind ./Food_order/3_Implementation/
