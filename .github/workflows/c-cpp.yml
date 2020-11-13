@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install make
+      run: sudo make install
     - name: make all
       run:  make all -C Food_order/3_Implementation/make 
  
