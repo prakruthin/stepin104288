@@ -2,6 +2,7 @@
 #ifndef __FOOD_H__
 #define __FOOD_H__
 
+
 #include<stdio.h>
 //#include<iostream.h>
 //#include<curses.h>
