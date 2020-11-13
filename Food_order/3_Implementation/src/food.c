@@ -513,7 +513,7 @@ void Password(void)
 		ch=getch();
 		if(ch!=13 && ch!=8)
 		{
-			putch('*');
+			printf("*");
 			pass[i]=ch;
 			i++;
 		}
