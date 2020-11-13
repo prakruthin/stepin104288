@@ -8,4 +8,6 @@
 
 
 
-![cppcheck-action](https://github.com/prakruthin/stepin104288/workflows/cppcheck-action/badge.svg)|
+![cppcheck-action](https://github.com/prakruthin/stepin104288/workflows/cppcheck-action/badge.svg)
+
+![C/C++ CI](https://github.com/prakruthin/stepin104288/workflows/C/C++%20CI/badge.svg)
