@@ -4,8 +4,8 @@
 
 
 #include<stdio.h>
-//#include<iostream.h>
-//#include<curses.h>
+#include<iostream.h>
+#include<curses.h>
 #include<string.h>
 #include<stdlib.h>
 
