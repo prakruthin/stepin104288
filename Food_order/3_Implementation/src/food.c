@@ -1,4 +1,36 @@
 #include "food.h"
+#include <termios.h>
+#include <unistd.h>
+#include <stdio.h>
+
+/* reads from keypress, doesn't echo */
+int getch(void)
+{
+    struct termios oldattr, newattr;
+    int ch;
+    tcgetattr( STDIN_FILENO, &oldattr );
+    newattr = oldattr;
+    newattr.c_lflag &= ~( ICANON | ECHO );
+    tcsetattr( STDIN_FILENO, TCSANOW, &newattr );
+    ch = getchar();
+    tcsetattr( STDIN_FILENO, TCSANOW, &oldattr );
+    return ch;
+}
+
+/* reads from keypress, echoes */
+int getche(void)
+{
+    struct termios oldattr, newattr;
+    int ch;
+    tcgetattr( STDIN_FILENO, &oldattr );
+    newattr = oldattr;
+    newattr.c_lflag &= ~( ICANON );
+    tcsetattr( STDIN_FILENO, TCSANOW, &newattr );
+    ch = getchar();
+    tcsetattr( STDIN_FILENO, TCSANOW, &oldattr );
+    return ch;
+}
+
 
 struct menu
 {
@@ -481,7 +513,7 @@ void Password(void)
 		ch=getch();
 		if(ch!=13 && ch!=8)
 		{
-			putch('*');
+			printf("*");
 			pass[i]=ch;
 			i++;
 		}
@@ -601,12 +633,10 @@ void viewmenu(void)
             scanf("%d",&quantity);
             total=total + m.price*(quantity);
             printf("\n");
-
             FILE *ttl;
             ttl = fopen("order.txt","a");
             fprintf(ttl,"\n%s\n quantity : %d\n",m.name,quantity);
             fclose(ttl);
-
             printf("Press 1 To Order Again :\nPress 2 To Get Your Total:\n\nEnter Your Choice :");
             scanf("%d",&again);
             printf("\n");
@@ -625,7 +655,6 @@ void viewmenu(void)
                 fclose(ttl);
                 printf("success!!!");
                 //administration();
-
                 details();
             }
             else
@@ -634,9 +663,7 @@ void viewmenu(void)
                 if(getch())
                 viewmenu();
             }
-
         }
-
     }
     */
 
@@ -807,4 +834,3 @@ void viewmenu1(void)
     fclose(fp);
     returnfunc();
 }
-
