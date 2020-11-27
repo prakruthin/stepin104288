@@ -1,5 +1,5 @@
 #include "food.h"
-#include <termios.h>
+//#include <termios.h>
 #include <unistd.h>
 #include <stdio.h>
 
